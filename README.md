@@ -1,2 +1,2 @@
 # gitops-basic-training
-This is a lab for training for GitOps Fundamentals
+This is a lab for training for GitOps Fundamentals -- Don
