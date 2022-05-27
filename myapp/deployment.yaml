@@ -9,18 +9,18 @@ spec:
     matchLabels:
       app: myapp
   template:
-   metadata:
+    metadata:
      labels:
        app: myapp
        training: gitops-basic
-   spec:
-     containers:
-     - name: nginx
-       image: nginx:latest
-       volumeMounts:
-       - name: config-volume
-         mountPath: /usr/share/nginx/html
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        volumeMounts:
+        - name: config-volume
+          mountPath: /usr/share/nginx/html
     volumes:
     - name: config-volume
       configMap:
-        namemyapp
+        name: myapp
